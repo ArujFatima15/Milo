@@ -30,6 +30,15 @@
             font-size: 2.5rem;
             color: black;
             margin-bottom: 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        header img {
+            width: 40px; /* Size of the paw logo */
+            height: auto;
+            vertical-align: middle;
+            margin-right: 10px;
         }
 
         nav ul {
@@ -181,6 +190,8 @@
 
     <!-- Header -->
     <header>
+        <!-- Paw Logo -->
+        <img src="https://th.bing.com/th/id/R.59425c996b6e089f36cc3e4bf68bdeea?rik=pqf2QNBnlvXXAQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-oH465XaJjpY%2fT8yZVJsteTI%2fAAAAAAAAADs%2fLwFrlgaVVv0%2fs1600%2fdog_paw_print_black.png&ehk=qvW8MtpLlEUV8sGE6u3EYf%2fw3rPjWyDNgaBSYjM7klk%3d&risl=&pid=ImgRaw&r=0" alt="Paw Logo">
         <h1>Meet Our Adorable Cats Available for Adoption</h1>
         <!-- Navigation Bar -->
         <nav>

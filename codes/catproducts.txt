@@ -36,6 +36,13 @@
         header .logo h1 {
             color: black;
             font-size: 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 30px;
+            margin-right: 10px;
         }
 
         header .nav-links {
@@ -101,6 +108,14 @@
             font-size: 2.8rem;
             margin-bottom: 3rem;
             color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .products h2 img {
+            height: 30px;
+            margin-right: 10px;
         }
 
         .product-container {
@@ -115,12 +130,14 @@
             padding: 25px;
             border-radius: 8px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+            overflow: hidden;
+            text-decoration: none; /* Remove underline from links */
         }
 
         .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-15px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
         }
 
         .product-card img {
@@ -128,16 +145,30 @@
             height: auto;
             border-radius: 5px;
             margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.05);
         }
 
         .product-card h3 {
             font-size: 1.8rem;
             margin-bottom: 15px;
+            transition: color 0.3s ease;
+color:black;
         }
 
         .product-card p {
             font-size: 1.1rem;
             color: #555;
+            transition: color 0.3s ease;
+color:black;
+        }
+
+        .product-card:hover h3,
+        .product-card:hover p {
+            color:#87CEEB;
         }
 
         /* About Section */
@@ -150,6 +181,14 @@
         .about h2 {
             font-size: 2.5rem;
             margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about h2 img {
+            height: 30px;
+            margin-right: 10px;
         }
 
         .about p {
@@ -317,7 +356,7 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>Milo Hub</h1>
+                <h1><img src="https://th.bing.com/th/id/R.59425c996b6e089f36cc3e4bf68bdeea?rik=pqf2QNBnlvXXAQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-oH465XaJjpY%2fT8yZVJsteTI%2fAAAAAAAAADs%2fLwFrlgaVVv0%2fs1600%2fdog_paw_print_black.png&ehk=qvW8MtpLlEUV8sGE6u3EYf%2fw3rPjWyDNgaBSYjM7klk%3d&risl=&pid=ImgRaw&r=0" alt="Milo Hub Logo">Milo Hub</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html#home">Home</a></li>
@@ -337,38 +376,38 @@
         </div>
     </section>
 
-   <!-- Products Section -->
-<section id="products" class="products">
-    <h2>Featured Cat Products</h2>
-    <div class="product-container">
-        <!-- Product 1: Cat Toy Set -->
-        <a href="shop.htm" class="product-card">
-            <img src="https://www.mewcats.com/cdn/shop/files/teaser-cat-stick-4-series-sound-toy-set-mewcats-21.jpg?v=1704785465&width=1445" alt="Cat Toy Set">
-            <h3>Cat Toy Set</h3>
-            <p>Engage your cat with a fun variety of toys to keep them active and entertained.</p>
-        </a>
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2><img src="https://th.bing.com/th/id/R.59425c996b6e089f36cc3e4bf68bdeea?rik=pqf2QNBnlvXXAQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-oH465XaJjpY%2fT8yZVJsteTI%2fAAAAAAAAADs%2fLwFrlgaVVv0%2fs1600%2fdog_paw_print_black.png&ehk=qvW8MtpLlEUV8sGE6u3EYf%2fw3rPjWyDNgaBSYjM7klk%3d&risl=&pid=ImgRaw&r=0" alt="Milo Hub Logo"> Featured Cat Products</h2>
+        <div class="product-container">
+            <!-- Product 1: Cat Toy Set -->
+            <a href="shop.htm" class="product-card">
+                <img src="https://www.mewcats.com/cdn/shop/files/teaser-cat-stick-4-series-sound-toy-set-mewcats-21.jpg?v=1704785465&width=1445" alt="Cat Toy Set">
+                <h3>Cat Toy Set</h3>
+                <p>Engage your cat with a fun variety of toys to keep them active and entertained.</p>
+            </a>
 
-        <!-- Product 2: Premium Cat Food -->
-        <a href="shop.htm" class="product-card">
-            <img src="https://img.freepik.com/premium-photo/cat-food-yellow-background-studio-shot_93675-159290.jpg" alt="Cat Food">
-            <h3>Premium Cat Food</h3>
-            <p>Nutrition-packed cat food that keeps your feline healthy and satisfied.</p>
-        </a>
+            <!-- Product 2: Premium Cat Food -->
+            <a href="shop.htm" class="product-card">
+                <img src="https://img.freepik.com/premium-photo/cat-food-yellow-background-studio-shot_93675-159290.jpg" alt="Cat Food">
+                <h3>Premium Cat Food</h3>
+                <p>Nutrition-packed cat food that keeps your feline healthy and satisfied.</p>
+            </a>
 
-        <!-- Product 3: Cat Litter Box -->
-        <a href="shop.htm" class="product-card">
-            <img src="https://www.shutterstock.com/image-photo/cat-litter-box-on-yellow-600nw-2282614165.jpg" alt="Cat Litter Box">
-            <h3>Cat Litter Box</h3>
-            <p>Keep your cat's environment clean and comfortable with this high-quality litter box.</p>
-        </a>
-    </div>
-</section>
+            <!-- Product 3: Cat Litter Box -->
+            <a href="shop.htm" class="product-card">
+                <img src="https://www.shutterstock.com/image-photo/cat-litter-box-on-yellow-600nw-2282614165.jpg" alt="Cat Litter Box">
+                <h3>Cat Litter Box</h3>
+                <p>Keep your cat's environment clean and comfortable with this high-quality litter box.</p>
+            </a>
+        </div>
+    </section>
 
-<!-- About Us Section -->
-<section id="about" class="about">
-    <h2>About Us</h2>
-    <p>We are passionate cat lovers who aim to provide only the best products for your feline companions. Whether it's food, toys, or accessories, we ensure quality and comfort for your cat.</p>
-</section>
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2><img src="https://th.bing.com/th/id/R.59425c996b6e089f36cc3e4bf68bdeea?rik=pqf2QNBnlvXXAQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-oH465XaJjpY%2fT8yZVJsteTI%2fAAAAAAAAADs%2fLwFrlgaVVv0%2fs1600%2fdog_paw_print_black.png&ehk=qvW8MtpLlEUV8sGE6u3EYf%2fw3rPjWyDNgaBSYjM7klk%3d&risl=&pid=ImgRaw&r=0" alt="Milo Hub Logo"> About Us</h2>
+        <p>We are passionate cat lovers who aim to provide only the best products for your feline companions. Whether it's food, toys, or accessories, we ensure quality and comfort for your cat.</p>
+    </section>
 
     <!-- Footer -->
     <footer>
