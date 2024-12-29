@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cat grooming services for your feline friends. Professional care for your cats.">
+    <title>Cat Grooming - Milo Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            color: #333;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #B8860B;
+            padding: 1em 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header .logo h1 {
+            color: black;
+            font-size: 2rem;
+        }
+
+        header .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header .nav-links li a {
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        header .nav-links li a:hover {
+            color: #87CEEB;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url(https://static.vecteezy.com/system/resources/previews/002/410/743/large_2x/cat-on-yellow-background-free-photo.jpg) no-repeat center center/cover;
+            height: 100vh;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #87CEEB;
+            color: black;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e5533e;
+        }
+
+        /* Grooming Section */
+        .grooming {
+            background-color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .grooming h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .grooming .grooming-description {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .grooming .service-card {
+            display: inline-block;
+            width: 30%;
+            margin: 0 10px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .grooming .service-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .grooming .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .grooming .service-card p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .grooming .cta-button {
+            margin-top: 20px;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #fff;
+            padding: 4rem 2rem;
+            text-align: center;
+            color: #333;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about .about-content {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .about .about-card {
+            display: inline-block;
+            width: 30%;
+            margin: 0 10px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .about .about-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .about .about-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .about .about-card p {
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #B8860B;
+            color: black;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1200px) {
+            .grooming .service-card,
+            .about .about-card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .grooming .service-card,
+            .about .about-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            header nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            header .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+
+            .cta-button {
+                padding: 10px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header .logo h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+
+            .grooming h2,
+            .about h2 {
+                font-size: 2rem;
+            }
+
+            .grooming-description,
+            .about-content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Milo Hub</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="cat.htm#home">Home</a></li>
+                <li><a href="#grooming">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="cat.htm#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Cat Grooming Services</h2>
+            <p>Let us pamper your cat with our professional grooming services.</p>
+            <a href="#grooming" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Grooming Section -->
+    <section id="grooming" class="grooming">
+        <h2>Our Grooming Services</h2>
+        <p class="grooming-description">
+            We offer a range of professional grooming services to keep your feline friend looking and feeling their best. Whether it's a bath, trimming, or full grooming session, we ensure your cat is treated with love and care.
+        </p>
+        
+        <div class="service-card">
+            <img src="https://thumb.photo-ac.com/bb/bb8e54bce0059d97af78fe6961c368e5_t.jpeg" alt="Bathing Service">
+            <h3>Bathing</h3>
+            <p>A soothing bath to clean and refresh your cat's fur.</p>
+        </div>
+        
+        <div class="service-card">
+            <img src="https://media.istockphoto.com/id/1270224358/photo/hand-combing-cats-head-with-special-deshedding-tool.jpg?s=612x612&w=0&k=20&c=uDEzO_vafrI77eHsZdL8h1AP-VQTOKVB6hA0FXL7N_w=" alt="Hair Trimming">
+            <h3>Hair Trimming</h3>
+            <p>Professional trimming to keep your cat's fur neat and healthy.</p>
+        </div>
+        
+        <div class="service-card">
+            <img src="https://st4.depositphotos.com/15678184/39872/i/450/depositphotos_398726294-stock-photo-paws-white-cat-orange-background.jpg" alt="Claw Clipping">
+            <h3>Claw Clipping</h3>
+            <p>Ensure your cat's claws are safe and healthy with regular clipping.</p>
+        </div>
+
+        <div class="cta-button">
+            <a href="register.htm#appointment-date">Book a Grooming Appointment</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p class="about-content">
+            At Milo Hub, we are dedicated cat lovers, passionate about providing the best care for your feline friends. With years of experience, our grooming services ensure your cat feels pampered and comfortable. We use only the best products and equipment to provide a safe and soothing experience for your pet.
+        </p>
+        
+        <div class="about-card">
+            <img src="https://media.istockphoto.com/id/1342980122/photo/black-fluffy-cat-eats-cat-food-from-a-fork-isolated-on-yellow-background-pet-food-banner.jpg?s=612x612&w=0&k=20&c=jvTtEzKiV4XQBHqNnOiadly2Hn-eBgJQ4ZsAgPDiUm0=" alt="Experienced Groomers">
+            <h3>Experienced Groomers</h3>
+            <p>Our team is trained to handle all cat breeds and their unique grooming needs.</p>
+        </div>
+        
+        <div class="about-card">
+            <img src="https://img.freepik.com/premium-photo/cat-bowl-with-dry-food-toys-yellow-background-studio-shot_93675-160536.jpg" alt="Safe Products">
+            <h3>Safe Products</h3>
+            <p>We only use pet-safe and high-quality grooming products for your cat’s comfort.</p>
+        </div>
+        
+        <div class="about-card">
+            <img src="https://media.istockphoto.com/id/1363576294/photo/adorable-white-cat-lie-on-yellow-hammock-on-yellow-background.jpg?s=612x612&w=0&k=20&c=tDO9yBp6YuWUe_gY1MAHR9KZCYO_TqnMDrn25Q_tuEQ=" alt="Stress-Free Grooming">
+            <h3>Stress-Free Grooming</h3>
+            <p>Our grooming sessions are designed to be stress-free and calming for your cat.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Milo Hub | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

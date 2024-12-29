@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adopt a cat from Milo Hub. Meet Whiskers, Shadow, and Simba - your next feline friend.">
+    <title>Cat Adoption - Milo Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #B8860B;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: #87CEEB;
+        }
+
+        /* Main Section */
+        .main-content {
+            padding: 2rem 5%;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .cat-card-container {
+            display: flex;
+            flex-direction: column; /* Stack the cards vertically */
+            gap: 20px; /* Space between cards */
+            align-items: center; /* Center align the cards */
+        }
+
+        .cat-card {
+            background-color: #fff;
+            padding: 20px;
+            width: 80%; /* Take up 80% of the available width */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 10px;
+            margin: 0 auto; /* Center align the card */
+        }
+
+        .cat-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .cat-card h3 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        .cat-card p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .adopt-button {
+            background-color: #87CEEB;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .adopt-button:hover {
+            background-color: #e5533e;
+        }
+
+        footer {
+            background-color: #B8860B;
+            color: black;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        /* Responsive Design */
+        /* For tablets and smaller screens */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .cat-card-container {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .cat-card {
+                width: 90%; /* Increase width for smaller screens */
+            }
+
+            .adopt-button {
+                padding: 8px 18px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* For mobile screens */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .cat-card-container {
+                width: 100%;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .cat-card {
+                width: 95%; /* Maximize width for mobile screens */
+            }
+
+            .adopt-button {
+                padding: 8px 16px;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Meet Our Adorable Cats Available for Adoption</h1>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="cat.htm#home">Home</a></li>
+                <li><a href="cat.htm#services">Services</a></li>
+                <li><a href="cat.htm#about">About Us</a></li>
+                <li><a href="cat.htm#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <h2>Find Your Perfect Feline Friend</h2>
+        
+        <div class="cat-card-container">
+            <!-- Cat 1 - Whiskers -->
+            <div class="cat-card">
+                <img src="https://t4.ftcdn.net/jpg/08/95/60/13/360_F_895601393_mXozWH7Aje0pjCQsQrCFlyeDWenNukQh.jpg" alt="Whiskers the kitten">
+                <h3>Whiskers</h3>
+                <p>A friendly and playful kitten ready to join your family. Loves cuddles and playing with toys.</p>
+                <a href="register.htm" class="adopt-button">Adopt Whiskers</a>
+            </div>
+
+            <!-- Cat 2 - Shadow -->
+            <div class="cat-card">
+                <img src="https://t4.ftcdn.net/jpg/07/85/27/77/360_F_785277797_LYmqy7xTjwNSuy0MjZDJ8TY2scCeCPfK.jpg" alt="Shadow the cat">
+                <h3>Shadow</h3>
+                <p>A calm and affectionate adult cat. Great for a quiet home where she can be pampered and loved.</p>
+                <a href="register.htm" class="adopt-button">Adopt Shadow</a>
+            </div>
+
+            <!-- Cat 3 - Simba -->
+            <div class="cat-card">
+                <img src="https://img.freepik.com/fotos-premium/lindo-gato-tabby-sentado-fondo-amarillo-mirando-camara_14117-987819.jpg" alt="Simba the kitten">
+                <h3>Simba</h3>
+                <p>A playful and curious kitten who loves adventure. He’ll keep you entertained with his energy!</p>
+                <a href="register.htm" class="adopt-button">Adopt Simba</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Milo Hub | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

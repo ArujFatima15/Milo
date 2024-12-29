@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adopt a cat and give them a forever home at Milo Hub. Find your perfect feline companion today!">
+    <title>Adopt a Cat - Milo Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #B8860B;
+            color: black;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #B8860B;
+            padding: 1em 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        header .logo h1 {
+            color: black;
+            font-size: 2rem;
+        }
+
+        header .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header .nav-links li a {
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        header .nav-links li a:hover {
+            color: #87CEEB;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url(https://static.vecteezy.com/system/resources/thumbnails/052/754/434/small_2x/portrait-of-different-cat-breeds-displaying-funny-playful-cat-emotions-photo.jpg) no-repeat center center/cover;
+            height: 50vh;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: top;
+            text-align: top;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+        }
+
+        /* Adopt a Cat Section */
+        .adopt {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .adopt h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .adopt p {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .adopt .adopt-cats {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .adopt .cat-card {
+            width: 30%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .adopt .cat-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .adopt .cat-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .adopt .cat-card p {
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #B8860B;
+            color: black;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media Queries for Responsiveness */
+
+        /* For devices with a screen width of 1024px or less (Tablets) */
+        @media (max-width: 1024px) {
+            .hero-content h2 {
+                font-size: 2.5rem;
+            }
+
+            .adopt h2 {
+                font-size: 2rem;
+            }
+
+            .adopt .adopt-cats {
+                justify-content: center;
+            }
+
+            .adopt .cat-card {
+                width: 45%; /* Reduces card width for better fit */
+            }
+
+            header .logo h1 {
+                font-size: 1.8rem;
+            }
+
+            header .nav-links li a {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* For devices with a screen width of 768px or less (Small Tablets and Portrait Mode Mobile) */
+        @media (max-width: 768px) {
+            .hero {
+                height: 40vh; /* Adjust hero height for smaller screens */
+            }
+
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+
+            .adopt h2 {
+                font-size: 1.8rem;
+            }
+
+            .adopt .adopt-cats {
+                flex-direction: column; /* Stack the cards vertically */
+                align-items: center;
+            }
+
+            .adopt .cat-card {
+                width: 80%; /* Make cards take more width on smaller screens */
+            }
+
+            header .logo h1 {
+                font-size: 1.6rem;
+            }
+
+            header .nav-links li a {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* For devices with a screen width of 480px or less (Mobile Devices) */
+        @media (max-width: 480px) {
+            .hero {
+                height: 30vh; /* Further reduce hero height for mobile */
+            }
+
+            .hero-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .adopt h2 {
+                font-size: 1.6rem;
+            }
+
+            .adopt p {
+                font-size: 1.1rem;
+            }
+
+            .adopt .adopt-cats {
+                flex-direction: column; /* Stack the cards vertically */
+                align-items: center;
+            }
+
+            .adopt .cat-card {
+                width: 90%; /* Cards take nearly full width on mobile */
+            }
+
+            header .logo h1 {
+                font-size: 1.4rem;
+            }
+
+            header .nav-links li a {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Milo Hub</h1>
+            </div>
+            <ul class="nav-links">
+                <li> <a href="cat.htm" target="_blank">Home</a></li>
+                <li><a href="cat.htm#services">Services</a></li>
+                <li><a href="cat.htm#about">About Us</a></li>
+                <li><a href="cat.htm#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Adopt a Cat</h2>
+        </div>
+    </section>
+
+    <!-- Adopt a Cat Section -->
+    <section class="adopt">
+        <h2>Find Your Perfect Feline Friend</h2>
+        <p>At Milo Hub, we are passionate about helping cats find their forever homes. Browse through our list of cats available for adoption, and give a loving home to a furry friend.</p>
+        
+        <div class="adopt-cats">
+            <!-- Cat 1 -->
+            <div class="cat-card">
+                <a href="friend.htm#whiskers" target="_blank"> 
+                    <img src="https://t3.ftcdn.net/jpg/05/98/47/66/360_F_598476682_YFaYoWg7y1OQd3E6qXgqDtCqoO0HYfRh.jpg" alt="Cat 1">
+                    <h3>Whiskers</h3>
+                    <p>A friendly and playful kitten ready to join your family. Loves cuddles and playing with toys.</p>
+                </a>
+            </div>
+
+            <!-- Cat 2 -->
+            <div class="cat-card">
+                <a href="friend.htm#shadow" target="_blank">
+                    <img src="https://t4.ftcdn.net/jpg/08/85/44/61/360_F_885446137_x3n5ewQ4baAXt5hRO90HDqpC93vABcPo.jpg" alt="Cat 2">
+                    <h3>Shadow</h3>
+                    <p>A calm and affectionate adult cat. Great for a quiet home where she can be pampered and loved.</p>
+                </a>
+            </div>
+
+            <!-- Cat 3 -->
+            <div class="cat-card">
+                <a href="friend.htm#simba" target="_blank">
+                    <img src="https://st3.depositphotos.com/20735908/35228/i/450/depositphotos_352284134-stock-photo-red-cat-posing-front-camera.jpg" alt="Cat 3">
+                    <h3>Simba</h3>
+                    <p>A playful and curious kitten who loves adventure. He’ll keep you entertained with his energy!</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Milo Hub | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

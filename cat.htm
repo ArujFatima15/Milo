@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A professional website for cat lovers, businesses, and services">
+    <title>Milo Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Embedding CSS within the HTML using <style> -->
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #B8860B;
+            padding: 1em 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            flex-wrap: wrap;
+        }
+
+        header .logo h1 {
+            color: black;
+            font-size: 2rem;
+        }
+
+        header .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding-left: 0;
+        }
+
+        header .nav-links li a {
+            color: black;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        header .nav-links li a:hover {
+            color: #87CEEB;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url(https://apstlshop.com/cdn/shop/files/AdobeStock_787949139.jpg?v=1720122508&width=1500) no-repeat center center/cover;
+            height: 100vh;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content h2 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #87CEEB;
+            color: black;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e5533e;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .service-card {
+            display: inline-block;
+            width: 30%;
+            margin: 0 10px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #f1f1f1;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about p {
+            font-size: 1.25rem;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact label {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            background-color: #87CEEB;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .contact button:hover {
+            background-color: #e5533e;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #B8860B;
+            color: black;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            header .nav-links li a {
+                font-size: 1.2rem;
+            }
+
+            .hero-content h2 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+
+            .services h2 {
+                font-size: 2rem;
+            }
+
+            .service-card {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .contact form {
+                width: 90%;
+            }
+
+            .contact button {
+                width: 100%;
+                padding: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            .cta-button {
+                padding: 12px 25px;
+                font-size: 0.9rem;
+            }
+
+            .services h2 {
+                font-size: 1.8rem;
+            }
+
+            .service-card h3 {
+                font-size: 1.3rem;
+            }
+
+            .about h2 {
+                font-size: 2rem;
+            }
+
+            .contact button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Milo Hub</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Milo Hub</h2>
+            <p>Your trusted source for all things cats</p>
+            <a href="#services" class="cta-button">Explore Our Services</a>
+        </div>
+    </section>
+
+   <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Cat Services</h2>
+        <div class="service-card">
+            <a href="adopt.html" target="_blank">
+                <img src="https://st5.depositphotos.com/81124746/69032/i/450/depositphotos_690328416-stock-photo-beautiful-scottish-cat-laying-isolated.jpg" alt="Adopt a Cat">
+                <h3>Adopt a Cat</h3>
+                <p>Find your new feline friend and give them a forever home.</p>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="grooming.htm" target="_blank">
+                <img src="https://t3.ftcdn.net/jpg/09/26/95/88/360_F_926958881_cvnTa9sPrGwiQrseb9QcBGPr2RitwsqJ.jpg" alt="Cat Grooming">
+                <h3>Cat Grooming</h3>
+                <p>Professional grooming services to keep your cat looking their best.</p>
+            </a>
+        </div>
+        <div class="service-card">
+            <a href="catproducts.htm" target="_blank">
+                <img src="https://t4.ftcdn.net/jpg/09/30/99/69/360_F_930996934_HJQgMbuRKixc5cUyXwjHjL7cTZC7Lxcd.jpg" alt="Cat Products">
+                <h3>Cat Products</h3>
+                <p>Top-quality toys, food, and accessories for your cat's needs.</p>
+            </a>
+        </div>
+    </section> 
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a passionate team of cat enthusiasts dedicated to providing top-notch services for cats and their owners.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Milo Hub | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
