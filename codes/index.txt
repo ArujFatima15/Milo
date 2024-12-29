@@ -35,18 +35,6 @@
             flex-wrap: wrap;
         }
 
-        header .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        header .logo img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
-            vertical-align: middle;
-        }
-
         header .logo h1 {
             color: black;
             font-size: 2rem;
@@ -114,15 +102,6 @@
         .services h2 {
             font-size: 2.5rem;
             margin-bottom: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .services h2 img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
         }
 
         .service-card {
@@ -184,15 +163,6 @@
         .about h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .about h2 img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
         }
 
         .about p {
@@ -210,15 +180,6 @@
         .contact h2 {
             font-size: 2.5rem;
             margin-bottom: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contact h2 img {
-            width: 30px;
-            height: 30px;
-            margin-right: 10px;
         }
 
         .contact form {
@@ -343,9 +304,7 @@
     <header>
         <nav>
             <div class="logo">
-                <!-- Paw icon added before the text -->
-                <img src="https://th.bing.com/th/id/R.59425c996b6e089f36cc3e4bf68bdeea?rik=pqf2QNBnlvXXAQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-oH465XaJjpY%2fT8yZVJsteTI%2fAAAAAAAAADs%2fLwFrlgaVVv0%2fs1600%2fdog_paw_print_black.png&ehk=qvW8MtpLlEUV8sGE6u3EYf%2fw3rPjWyDNgaBSYjM7klk%3d&risl=&pid=ImgRaw&r=0" alt="Paw Icon" style="width: 30px; height: 30px; margin-right: 10px; vertical-align: middle;">
-                <h1 style="display: inline; color: black; font-size: 2rem;">Milo Hub</h1>
+                <h1>Milo Hub</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -365,9 +324,9 @@
         </div>
     </section>
 
-    <!-- Services Section -->
+   <!-- Services Section -->
     <section id="services" class="services">
-        <h2><img src="https://th.bing.com/th/id/R.59425c996b6e089f36cc3e4bf68bdeea?rik=pqf2QNBnlvXXAQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-oH465XaJjpY%2fT8yZVJsteTI%2fAAAAAAAAADs%2fLwFrlgaVVv0%2fs1600%2fdog_paw_print_black.png&ehk=qvW8MtpLlEUV8sGE6u3EYf%2fw3rPjWyDNgaBSYjM7klk%3d&risl=&pid=ImgRaw&r=0" alt="Paw Icon">Cat Services</h2>
+        <h2>Cat Services</h2>
         <div class="service-card">
             <a href="adopt.html" target="_blank">
                 <img src="https://st5.depositphotos.com/81124746/69032/i/450/depositphotos_690328416-stock-photo-beautiful-scottish-cat-laying-isolated.jpg" alt="Adopt a Cat">
@@ -389,17 +348,17 @@
                 <p>Top-quality toys, food, and accessories for your cat's needs.</p>
             </a>
         </div>
-    </section>
+    </section> 
 
     <!-- About Us Section -->
     <section id="about" class="about">
-        <h2><img src="https://th.bing.com/th/id/R.59425c996b6e089f36cc3e4bf68bdeea?rik=pqf2QNBnlvXXAQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-oH465XaJjpY%2fT8yZVJsteTI%2fAAAAAAAAADs%2fLwFrlgaVVv0%2fs1600%2fdog_paw_print_black.png&ehk=qvW8MtpLlEUV8sGE6u3EYf%2fw3rPjWyDNgaBSYjM7klk%3d&risl=&pid=ImgRaw&r=0" alt="Paw Icon">About Us</h2>
+        <h2>About Us</h2>
         <p>We are a passionate team of cat enthusiasts dedicated to providing top-notch services for cats and their owners.</p>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2><img src="https://th.bing.com/th/id/R.59425c996b6e089f36cc3e4bf68bdeea?rik=pqf2QNBnlvXXAQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-oH465XaJjpY%2fT8yZVJsteTI%2fAAAAAAAAADs%2fLwFrlgaVVv0%2fs1600%2fdog_paw_print_black.png&ehk=qvW8MtpLlEUV8sGE6u3EYf%2fw3rPjWyDNgaBSYjM7klk%3d&risl=&pid=ImgRaw&r=0" alt="Paw Icon">Contact Us</h2>
+        <h2>Contact Us</h2>
         <form action="#" method="post">
             <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>

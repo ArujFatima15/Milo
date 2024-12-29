@@ -33,20 +33,9 @@
             padding: 0 20px;
         }
 
-        header .logo {
-            display: flex;
-            align-items: center;
-        }
-
         header .logo h1 {
             color: black;
             font-size: 2rem;
-            margin-left: 10px;
-        }
-
-        header .logo img {
-            width: 40px; /* Size of the paw logo */
-            height: 40px;
         }
 
         header .nav-links {
@@ -90,15 +79,6 @@
         .adopt h2 {
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .adopt h2 img {
-            width: 30px;
-            height: 30px;
         }
 
         .adopt p {
@@ -120,14 +100,6 @@
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-radius: 5px;
-        }
-
-        /* Hover effect for cat cards */
-        .adopt .cat-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
 
         .adopt .cat-card img {
@@ -135,32 +107,15 @@
             height: auto;
             border-radius: 5px;
             margin-bottom: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        /* Hover effect for images */
-        .adopt .cat-card:hover img {
-            transform: scale(1.05);
         }
 
         .adopt .cat-card h3 {
             font-size: 1.5rem;
             margin-bottom: 10px;
-            transition: color 0.3s ease;
-        }
-
-        /* Hover effect for card text */
-        .adopt .cat-card:hover h3 {
-            color: #87CEEB;
         }
 
         .adopt .cat-card p {
             font-size: 1rem;
-            transition: color 0.3s ease;
-        }
-
-        .adopt .cat-card:hover p {
-            color: #555;
         }
 
         /* Footer */
@@ -278,7 +233,6 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="https://th.bing.com/th/id/R.59425c996b6e089f36cc3e4bf68bdeea?rik=pqf2QNBnlvXXAQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-oH465XaJjpY%2fT8yZVJsteTI%2fAAAAAAAAADs%2fLwFrlgaVVv0%2fs1600%2fdog_paw_print_black.png&ehk=qvW8MtpLlEUV8sGE6u3EYf%2fw3rPjWyDNgaBSYjM7klk%3d&risl=&pid=ImgRaw&r=0" alt="Paw Logo"> <!-- Paw Logo -->
                 <h1>Milo Hub</h1>
             </div>
             <ul class="nav-links">
@@ -299,7 +253,7 @@
 
     <!-- Adopt a Cat Section -->
     <section class="adopt">
-        <h2><img src="https://th.bing.com/th/id/R.59425c996b6e089f36cc3e4bf68bdeea?rik=pqf2QNBnlvXXAQ&riu=http%3a%2f%2f4.bp.blogspot.com%2f-oH465XaJjpY%2fT8yZVJsteTI%2fAAAAAAAAADs%2fLwFrlgaVVv0%2fs1600%2fdog_paw_print_black.png&ehk=qvW8MtpLlEUV8sGE6u3EYf%2fw3rPjWyDNgaBSYjM7klk%3d&risl=&pid=ImgRaw&r=0" alt="Paw Logo"> Find Your Perfect Feline Friend</h2>
+        <h2>Find Your Perfect Feline Friend</h2>
         <p>At Milo Hub, we are passionate about helping cats find their forever homes. Browse through our list of cats available for adoption, and give a loving home to a furry friend.</p>
         
         <div class="adopt-cats">
